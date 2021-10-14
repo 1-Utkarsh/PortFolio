@@ -1,0 +1,336 @@
+/*-----------------------Defaults------------------------*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body {
+	line-height: 1;
+	margin: 0;
+
+	/*-------Hiding the Scrollbar-------*/
+	-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  /*----------------------------------*/
+}
+
+/*--------Hiding the Scrollbar---------*/
+body::-webkit-scrollbar {
+	display: none;
+}
+/*-------------------------------------*/
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.row::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+* {
+	box-sizing:  border-box;
+}
+
+#frontPage {
+    background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18);
+    background-size: 600% 121%;
+    animation: gradient 25s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+/*----------------------------------------------------------*/
+
+/*----------------------Custom Styles----------------------*/
+.intro {
+	font-family: 'Allison', cursive;
+	font-size: 5.5em;
+	padding-left: 2em;
+	padding-top: 1.65em;
+	padding-bottom: 0.7em;
+}
+
+.intro p {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+ 	border-right: .07em solid white; /* The typwriter cursor */
+ 	white-space: nowrap; /* Keeps the content on a single line */
+}
+
+.intro a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.intro p:nth-child(1) {
+	width: 2.3em;
+	animation: 
+    type1 1s steps(8, end),
+    blink-caret .75s step-end 2;
+    animation-fill-mode: forwards;
+}
+.intro p:nth-child(1):hover {
+	color: #474747;
+}
+
+.intro p:nth-child(2) {
+	padding-bottom: 0.1em;
+	width: 7.66em;
+	opacity: 0;
+	animation: 
+    type2 3s steps(25, end),
+    blink-caret .75s step-end infinite;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.profileImg {
+	overflow: hidden;
+	opacity: 0;
+	border-radius: 50%;
+	margin-left: 19em;
+	border: 5px outset #8f9bb0;
+	animation: fadeIn 5s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+
+/*-----connectButtons------*/
+
+.connectButtons ul {
+		opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    margin-top: 2em;
+    display: flex;
+    animation: fadeIn 5s;
+		animation-delay: 2s;
+		animation-fill-mode: forwards;
+}
+
+.connectButtons ul li {
+    list-style: none;
+    margin: 0 3em;
+}
+
+.connectButtons ul li .fa {
+		color: #000000;
+		padding-top: 0.15em;
+    font-size: 30px;
+    line-height: 50px;
+    transition: .5s;
+}
+
+.connectButtons ul li .fa:hover {
+    color: #ffffff;
+}
+
+.connectButtons ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(224, 224, 224, 0.75);
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.connectButtons ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -15px);
+}
+
+.connectButtons ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.connectButtons ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.connectButtons ul li:nth-child(3) a:hover {
+    background-color: slategrey;
+}
+.connectButtons ul li:nth-child(4) a:hover {
+    background-color: #0077B5;
+}
+/*--------------------------------------*/
+
+.education {
+	padding: 11em 0;
+}
+
+.projects {
+	padding: 11em 0;
+}
+
+.tile {
+	width: 100%;
+	margin: auto;
+	margin-top: 13em;
+	margin-bottom: 0;
+	font-family: 'Nunito', sans-serif;
+	background-color: rgba(24, 0, 31, 0.7);
+	color: #FFFFFF;
+	border-radius: 0.25em;
+	/*border-bottom: 3.2em solid floralwhite;*/
+}
+
+#secondTile {
+	margin-top: 0;
+}
+
+#thirdTile {
+	margin-top: 0;
+}
+
+.tile h1 {
+	font-family: 'Tourney', cursive;
+	font-size: 3.1em;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 0.3em;
+	padding-top: 0.3em;
+}
+
+.education .tileContent {
+	/*background-color: rgba(255, 255, 255, 0.92);*/
+	background-image: url('img/education background11.gif');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: black;
+	margin-left: 2em;
+	padding: 1em;
+	border-radius: 0.5em;
+}
+
+.projects .tileContent {
+	/*background-color: rgba(255, 255, 255, 0.92);*/
+	background-image: url('img/Project.gif');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: black;
+	padding: 1em;
+	border-radius: 0.5em;
+}
+
+.experience .tileContent {
+	/*background-color: rgba(255, 255, 255, 0.92);*/
+	background-image: url('img/experience6.gif');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: black;
+	padding: 1em;
+	border-radius: 0.5em;
+}
+
+.tileContent .col-4{
+	margin: 0 auto;
+	margin-top: 1.7em;
+	text-align: center;
+	border-radius: 0.2em;
+	padding: 0.5rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #ffff;
+}
+
+.tileContent .col-5{
+	margin: 0 auto;
+	margin-top: 1.7em;
+	text-align: center;
+	border-radius: 0.2em;
+	padding: 0.5rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #ffff;
+}
+
+.tileContent .col-6{
+	margin: 0 auto;
+	margin-top: 1.7em;
+	text-align: center;
+	border-radius: 0.2em;
+	padding: 0.5rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #ffff;
+}
+
+.tileContent .col-3{
+	margin: 1.7em auto;
+	margin-top: 2.5em;
+	text-align: center;
+	border-radius: 0.2em;
+	padding: 0.5rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #ffff;
+}
+
+.subTileContent {
+	padding-top: 0.2em;
+	line-height: 1.3;
+}
+
+.subTileContent a {
+	text-decoration: none;
+}
+
+.subTileContent ul {
+	margin-top: 0;
+}
+
+/*-----------------------------------------------------------*/
+
+/*________EFFECTS_________*/
+
+/* Profile Picture animation */
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+/* The typing effect */
+@keyframes type1 {
+  0% { width: 0; }
+  99.9% { border-right: 0.07em solid white; }
+  100% { width: 2.3em; }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from, to { border-color: transparent } /* values at 0% and 100% */
+  50% { border-color: white; }
+}
