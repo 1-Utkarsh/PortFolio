@@ -605,13 +605,13 @@ body::-webkit-scrollbar {
 
 
 /*______________Mobile Responsive________________*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
 	.football video {
 		width: 100%;
 		height: auto;
 	}
 	.intro {
-		padding-left: 0.5rem;
+		padding-left: 0.4rem;
 	}
 	.photoGallery .heading {
 		font-size: 1.4rem;
