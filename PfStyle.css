@@ -648,7 +648,7 @@ body::-webkit-scrollbar {
 
 		@media screen and (max-width: 500px) {
 			.football video {
-				width: 100%;
+				width: 85%;
 				height: auto;
 			}
 			.intro {
