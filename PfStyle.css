@@ -682,7 +682,7 @@ body::-webkit-scrollbar {
 
 		@media screen and (max-width: 680px) {
 			.photoGallery a img {
-				margin: 0.3rem auto;
+				margin: 0.31rem auto;
 			}
 		}
 	}
