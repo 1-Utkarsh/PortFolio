@@ -620,7 +620,7 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 1200px) {
 	.intro {
-		font-size: 3.5rem;
+		font-size: 3rem;
 		padding-left: 2rem;
 		padding-top: 1.8rem;
 		padding-bottom: 0.7rem;
