@@ -617,7 +617,7 @@ body::-webkit-scrollbar {
 		font-size: 1.4rem;
 	}
 	.photoGallery img {
-		width: 100px;
+		width: 180px;
 		height: auto;
 	}
 }
