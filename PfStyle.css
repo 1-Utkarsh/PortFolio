@@ -625,6 +625,9 @@ body::-webkit-scrollbar {
 		width: 180px;
 		height: auto;
 	}
+	.connectButtons ul li {
+		margin: 0 auto;
+	}
 }
 
 @media screen and (max-width: 600px) {
